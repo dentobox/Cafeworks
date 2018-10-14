@@ -37,7 +37,7 @@
                 <img src="/imgs/logo-clay.svg" alt="CafePal">
             </h1>
             <a href="/index" class="wow animated fadeIn"><strong>KR</strong></a>
-            <a href="/en" class="wow animated fadeIn">EN</a>
+            <!-- <a href="/en" class="wow animated fadeIn">EN</a> -->
         </div>
         <nav>
             <ul class="wow animated fadeIn">
@@ -111,7 +111,7 @@
             <h2 class="wow animated fadeIn" data-wow-delay="0.3s">직접 사용하며 보다 나은 카페팔을 <strong>만드는 사람들</strong></h2>
             <div class="teams">
                 <div class="wow animated fadeIn" data-wow-delay="0.5s">
-                    <span class="thumb"><img src="/assets/img/<dhan class="png"></dhan>"></span>
+                    <span class="thumb"><img src="/assets/img/dhan.png class="png"></span>
                     <strong>Daniel Han</strong>
                     <em>Founder</em>
                     <a href="https://www.linkedin.com/in/danielhan-0102/" title="링크드인 프로필 바로가기" target="_blank"><i
@@ -164,14 +164,13 @@
                     </li>
                     <li>이메일 : <a href="mailto:cafepalkorea@gmail.com" target="_blank">cafepalkorea@gmail.com</a></li>
                     <li>텔레그램 : <a href="https://t.me/cafepal">@cafepal</a></li>
-                    <li>텔레그램(EN) : <a href="https://t.me/cafepal_eng">@cafepal_eng</a></li>
                     <li>인스타그램(EN) : <a href="https://instagram.com/cafepalkorea">@cafepalkorea</a></li>
                 </ul>
             </div>
             <div class="copyright row">
-                <h6 class="column">&copy; 2018 CafePal, Inc.</h6>
+                <h6 class="column">&copy; 2018 CafePal Company</h6>
                 <span class="column">
-                    <a href="/apps/terms">이용약관 및 개인정보 취급정책</a>
+                    <a href="/assets/terms">이용약관 및 개인정보 취급정책</a>
                 </span>
             </div>
         </div>
@@ -187,38 +186,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
     <a href="https://t.me/cafepal" target="_blank" class="btn-float" title="텔레그램으로 문의하기"><i class="fab fa-telegram-plane"></i></a>
-  <!-- Naver Maps - analytics -->
+
+<!-- naver analytics -->
   <script>
-     var map = new naver.maps.Map('map');
-     var myaddress = '불정로 6';// 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
-     naver.maps.Service.geocode({address: myaddress}, function(status, response) {
-         if (status !== naver.maps.Service.Status.OK) {
-             return alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');
-         }
-         var result = response.result;
-         // 검색 결과 갯수: result.total
-         // 첫번째 결과 결과 주소: result.items[0].address
-         // 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
-         var myaddr = new naver.maps.Point(result.items[0].point.x, result.items[0].point.y);
-         map.setCenter(myaddr); // 검색된 좌표로 지도 이동
-         // 마커 표시
-         var marker = new naver.maps.Marker({
-           position: myaddr,
-           map: map
-         });
-         // 마커 클릭 이벤트 처리
-         naver.maps.Event.addListener(marker, "click", function(e) {
-           if (infowindow.getMap()) {
-               infowindow.close();
-           } else {
-               infowindow.open(map, marker);
-           }
-         });
-         // 마크 클릭시 인포윈도우 오픈
-         var infowindow = new naver.maps.InfoWindow({
-             content: '<h4> [네이버 개발자센터]</h4><a href="https://developers.naver.com" target="_blank"><img src="https://developers.naver.com/inc/devcenter/images/nd_img.png"></a>'
-         });
-     });
+    var map = new naver.maps.Map('map', {
+   center: new naver.maps.LatLng(37.3595704, 127.105399),
+   zoom: 10
+});
+
+var marker = new naver.maps.Marker({
+   position: new naver.maps.LatLng(37.3595704, 127.105399),
+   map: map
+});
      </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE393sRHUh07CyBAewpSkS9HXHvbvy9cM_KEY&callback=initMap&language=ja&region=JP"
