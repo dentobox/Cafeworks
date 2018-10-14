@@ -26,6 +26,8 @@
     <link href="/css/cafepal.css" rel="stylesheet">
     <link href="/css/animate.css" rel="stylesheet">
     <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+    <!-- Maps -->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=YOUR_CLIENT_ID"></script>
 </head>
 <body class="cafe-body">
 
@@ -40,7 +42,7 @@
         <nav>
             <ul class="wow animated fadeIn">
                 <li class="is-current"><a href="#hero" class="scroll">카페팔이 왔습니다!</a></li>
-                <li><a href="#cafeview" class="scroll">?</a>카페팔 앱</li>
+                <li><a href="#cafeview" class="scroll">왜 카페팔인가요?</a></li>
                 <li><a href="#cafeteam" class="scroll">만드는 사람들</a></li>
                 <li><a href="#footer" class="scroll"><i class="fa fa-question-circle"></i></a></li>
             </ul>
@@ -48,6 +50,9 @@
     </header>
 
     <section id="hero">
+        <!--video id="video" autoplay muted loop style="display:none;">
+            <source src="imgs/lights.mp4" type="video/mp4">
+        </video-->
         <canvas id="world"></canvas>
         <div class="container">
             <div class="headline wow animated fadeIn">
@@ -59,10 +64,20 @@
                         Play</a>
                     <a href="https://itunes.apple.com/" target="_blank"><i class="fab fa-apple"></i>App
                         Store</a>
-                </div>          
+                </div>
+                <!-- // 구성 변경으로 숨김
+                <div class="screens wow animated pulse" data-wow-delay="1.5s">
+                    <div class="screen">
+                        <img src="imgs/screen0.png" alt="">
+                        <span class="wow animated fadeInDown" data-wow-delay="2.5s">모든 거래소와 지갑을 하나로!</span>
+                        <span class="wow animated fadeInUp" data-wow-delay="3s">가격과 갯수, 바로 송금까지!</span>
+                    </div>
+                </div>
+                -->
             </div>
         </div>
     </section>
+
     <section id="cafeview">
         <div class="container">
             <h2 class="wow animated fadeIn" data-wow-delay="0.3s">내 주변에 취향저격하는 카페를 찾아보자 <strong>편리한 카페팔</strong></h2>
@@ -73,19 +88,19 @@
                     <div class="screen wow animated bounceInUp" data-wow-delay="0.3s"><img src="/assets/img/login.png"></div>
                 </li>
                 <li data-cafeview-label="map">
-                    <h4>Map</h4>
+                    <h4>map</h4>
                     <p>간편한 지도로 쉽게<br /><strong>취향에 맞는 카페를 찾으세요.</strong></p>
-                    <div class="screen"><img src="/assets/img/map.png"></div>
+                    <div class="screen"><img src="/asset/img/map.png"></div>
                 </li>
                 <li data-cafeview-label="accessibility">
                     <h4>Accessibility</h4>
                     <p>지갑을 집에 두고 왔어도 걱정은 그만!<br /><strong>간편하게 핸드폰으로 결제하세요.</strong></p>
-                    <div class="screen"><img src="/assets/img/order.png"></div>
+                    <div class="screen"><img src="/asset/img/order.png"></div>
                 </li>
                 <li data-cafeview-label="easy">
                     <h4>Easy</h4>
                     <p><strong>당신의 뒷골목에 있는 인생 커피숍</strong><br />스타벅스에 지친 당신, 카페팔에서 찾으세요.</p>
-                    <div class="screen"><img src="/assets/img/choice.png"></div>
+                    <div class="screen"><img src="/asset/img/choice.png"></div>
                 </li>
             </ul>
         </div>
@@ -96,7 +111,7 @@
             <h2 class="wow animated fadeIn" data-wow-delay="0.3s">직접 사용하며 보다 나은 카페팔을 <strong>만드는 사람들</strong></h2>
             <div class="teams">
                 <div class="wow animated fadeIn" data-wow-delay="0.5s">
-                    <span class="thumb"><img src="/assets/img/dhan.png class="png"></dhan>"></span>
+                    <span class="thumb"><img src="/assets/img/<dhan class="png"></dhan>"></span>
                     <strong>Daniel Han</strong>
                     <em>Founder</em>
                     <a href="https://www.linkedin.com/in/danielhan-0102/" title="링크드인 프로필 바로가기" target="_blank"><i
@@ -104,7 +119,7 @@
                 </div>
                 <div class="wow animated fadeIn" data-wow-delay="1.5s">
                     <span class="thumb"><img src="assets/img/lucky.jpg"></span>
-                    <strong>Animal Member</strong>
+                    <strong>Animal Members</strong>
                     <em>more people here</em
                 </div>
                 <div class="wow animated fadeIn" data-wow-delay="1.8s">
@@ -116,15 +131,15 @@
         </div>
     </section>
     <div id="map"></div>
-       <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
+        <script>
+          function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 8,
+              center: {lat: 37.51991, lng: 126.90587}
+            });
+          }
+     </script>
+
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -149,8 +164,8 @@
                     </li>
                     <li>이메일 : <a href="mailto:cafepalkorea@gmail.com">cafepalkorea@gmail.com</a></li>
                     <li>텔레그램 : <a href="https://t.me/cafepal">@cafepal</a></li>
-                    <!-- <li>텔레그램(EN) : <a href="https://t.me/cafepal_eng">@cafepal_eng</a></li> 
-                    <li>인스타그램(EN) : <a href="https://instagram.com/cafepalkorea">@cafepalkorea</a></li> -->
+                    <li>텔레그램(EN) : <a href="https://t.me/cafepal_eng">@cafepal_eng</a></li>
+                    <li>인스타그램(EN) : <a href="https://instagram.com/cafepalkorea">@cafepalkorea</a></li>
                 </ul>
             </div>
             <div class="copyright row">
@@ -174,8 +189,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <a href="https://t.me/cafepal" class="btn-float" title="텔레그램으로 문의하기"><i class="fab fa-telegram-plane"></i></a>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxdpbYVNY1roM7ETMNhVfudMjGpA1kEA4&callback=initMap"
-    async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE393sRHUh07CyBAewpSkS9HXHvbvy9cM_KEY&callback=initMap&language=ja&region=JP"
+    async defer>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126812295-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
