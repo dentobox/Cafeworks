@@ -18,7 +18,7 @@ body {
   height: 100%;
   min-height: 100%;
   background: #F4F5F7;
-  color: #111F49;
+  color: #EA8C55;
   font-size: 16px;
   word-break: keep-all;
   -webkit-font-smoothing: antialiased;
@@ -290,7 +290,7 @@ section .page-next:hover {
 }
 
 #hero {
-  background-color: #111F49;
+  background-color: #EA8C55;
 }
 #hero #world {
   position: fixed;
@@ -340,7 +340,7 @@ section .page-next:hover {
   margin: 36px 8px 0;
   width: 180px;
   background: #FFF;
-  color: #111F49;
+  color: #EA8C55;
   font-family: "ubuntu";
   font-weight: 700;
   font-size: 16px;
@@ -349,13 +349,13 @@ section .page-next:hover {
 }
 #hero .headline .btns a .fab {
   margin: 0 16px 1px 0;
-  color: #111F49;
+  color: #EA8C55;
   font-size: 18px;
   opacity: 0.4;
 }
 #hero .headline .btns a:hover {
   text-decoration: none;
-  color: #111F49;
+  color: #EA8C55;
   box-shadow: 0 1px 48px rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
@@ -479,7 +479,7 @@ section .page-next:hover {
   padding-bottom: 10px;
   width: 176px;
   background: #FFF;
-  color: #111F49;
+  color: #EA8C55;
   cursor: help;
   box-shadow: 0 0 32px rgba(17, 31, 73, 0.2);
 }
@@ -554,7 +554,7 @@ section .page-next:hover {
   box-sizing: border-box;
   margin: 24px 0;
   padding: 24px;
-  background: #111F49;
+  background: #EA8C55;
   color: #ACB1C0;
   border-radius: 24px;
   box-shadow: 0 4px 150px rgba(17, 31, 73, 0.6);
@@ -613,8 +613,8 @@ section .page-next:hover {
   margin-left: -24px;
   width: 48px;
   height: 48px;
-  background: #111F49;
-  color: #111F49 !important;
+  background: #EA8C55;
+  color: #EA8C55 !important;
   font-size: 24px !important;
   line-height: 48px !important;
   border-radius: 24px;
@@ -622,7 +622,7 @@ section .page-next:hover {
 #security ul:hover li {
   margin: 24px 0;
   padding: 24px;
-  background: #111F49;
+  background: #EA8C55;
   color: #ACB1C0;
   border-radius: 24px;
 }
@@ -641,7 +641,7 @@ section .page-next:hover {
   margin: 0;
   padding: 48px 24px;
   background: #FFF;
-  color: #111F49;
+  color: #EA8C55;
   border-radius: 32px;
 }
 #security ul:hover li:hover h5 {
@@ -662,11 +662,17 @@ section .page-next:hover {
   border-color: transparent #F9D3A7 #F9D3A7 transparent;
 }
 
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;
+        background-color: grey;
+      }
+
 #partners {
   background: #F7A64A;
 }
 #partners h2 {
-  color: #111F49;
+  color: #EA8C55;
 }
 #partners h2 strong {
   border-bottom-color: rgba(17, 31, 73, 0.4);
@@ -704,7 +710,7 @@ section .page-next:hover {
 }
 #partners .news h3 {
   margin: 0 12px 12px;
-  color: #111F49;
+  color: #EA8C55;
   font-weight: 700;
   font-size: 22px;
 }
@@ -715,7 +721,7 @@ section .page-next:hover {
   display: block;
   padding: 12px;
   border-top: 1px solid #F4F5F7;
-  color: #111F49;
+  color: #EA8C55;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -762,10 +768,10 @@ footer h5 {
   font-size: 2rem;
 }
 footer a {
-  color: #111F49;
+  color: #EA8C55;
 }
 footer a:active, footer a:visited {
-  color: #111F49;
+  color: #EA8C55;
 }
 footer a:hover {
   color: #F7A64A;
