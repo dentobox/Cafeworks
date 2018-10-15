@@ -484,9 +484,15 @@ section .page-next:hover {
   box-shadow: 0 0 32px rgba(17, 31, 73, 0.2);
 }
 #cafeteam .teams > div .thumb {
-  display: block;
+  width: 200px;
+  height: 200px;
+  background: #F7A64A;
+  color: #FFF;
+  font-size: 48px;
+  line-height: 176px;
+  /* display: block;
   margin: 0 auto 10px;
-  overflow: hidden;
+  overflow: hidden; */
 }
 #cafeteam .teams > div .thumb img {
   display: block;
