@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="690px" height="123px" viewBox="0 0 690 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.3%" y="-7.6%" width="104.8%" height="115.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="150" letter-spacing="-5.399997">
+        <g id="Group" filter="url(#filter-1)" transform="translate(-1.000000, -52.000000)" fill="#FFFFFF">
+            <text id="CAFE" font-family="Arial-BoldMT, Arial" font-weight="bold">
+                <tspan x="0.137396344" y="165">CAFE</tspan>
+            </text>
+            <text id="PAL" font-family="Arial-Black, Arial Black" font-weight="700">
+                <tspan x="388.447652" y="165">PAL</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
