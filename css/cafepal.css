@@ -455,12 +455,11 @@ section .page-next:hover {
 #cafeview ul li.current h4, #cafeview ul li.current p {
   opacity: 1;
 }
-#cafeview:after {
-  background-image: url(/assets/img/bg2.png);
+
 }
 
 #cafeteam {
-  background: #EA8C55;
+  background: #F7A64A;
   background-size: cover;
 }
 #cafeteam .teams {
