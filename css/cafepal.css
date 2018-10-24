@@ -460,7 +460,7 @@ section .page-next:hover {
 }
 
 #cafeteam {
-  background: #F9D3A7;
+  background: #EA8C55;
   background-size: cover;
 }
 #cafeteam .teams {
@@ -673,12 +673,6 @@ section .page-next:hover {
 #security:after {
   border-color: transparent #F9D3A7 #F9D3A7 transparent;
 }
-
-#map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;
-        background-color: grey;
-      }
 
 #partners {
   background: #F7A64A;
