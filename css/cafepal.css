@@ -457,10 +457,15 @@ section .page-next:hover {
 }
 
 }
+#cafeview:after {
+  background-image: url(/assets/img/main_01.png); 
+}
 
 #cafeteam {
   background: #F7A64A;
   background-size: cover;
+}
+
 }
 #cafeteam .teams {
   margin: 5vh auto 0;
