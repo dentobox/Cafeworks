@@ -385,8 +385,29 @@ section .page-next:hover {
   box-shadow: 0 1px 48px rgba(255, 255, 255, 0.5);
 }
 #hero:after {
-  background-image: url(../../imgs/bg_1.png);
+  background-image: url(../assets/img/main.png);
 }
+
+.asseen {
+  margin-bottom:160px;margin-top:-120px;
+  position:relative;z-index:10}
+.asseen img {
+  display:inline-block;
+  text-align:center;
+  max-height:30px;
+  margin:15px 20px;
+  opacity:0.6}
+.asseen {
+  margin-top:-80px}
+.asseen img {
+  max-height:24px;margin:15px 20px}
+.asseen {
+  margin-top:-20px}
+.asseen img {
+  max-height:24px;margin:15px 20px}
+.asseen {
+  margin-top:-210px}
+.asseen{margin-top:40px}
 
 #cafeview {
   background: #F7A64A;
@@ -455,17 +476,13 @@ section .page-next:hover {
 #cafeview ul li.current h4, #cafeview ul li.current p {
   opacity: 1;
 }
-
-}
 #cafeview:after {
-  background-image: url(/assets/img/main_01.png); 
+  background-image: url(/assets/img/bg2.png);
 }
 
 #cafeteam {
-  background: #F7A64A;
+  background: #F9D3A7;
   background-size: cover;
-}
-
 }
 #cafeteam .teams {
   margin: 5vh auto 0;
@@ -488,28 +505,16 @@ section .page-next:hover {
   box-shadow: 0 0 32px rgba(17, 31, 73, 0.2);
 }
 #cafeteam .teams > div .thumb {
-  width: 176px;
-  height: 176px;
-  background: #F7A64A;
-  color: #FFF;
-  font-size: 48px;
-  line-height: 176px;
-  /* display: block;
+  display: block;
   margin: 0 auto 10px;
-  overflow: hidden; */
+  overflow: hidden;
 }
 #cafeteam .teams > div .thumb img {
-  width: 176px;
-  height: 176px;
-  background: #F7A64A;
-  color: #FFF;
-  font-size: 48px;
-  line-height: 176px;
-  /* display: block;
+  display: block;
   min-height: 100%;
   -webkit-filter: grayscale(100%);
-  Safari 6.0 - 9.0 
-  filter: grayscale(100%); */
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 #cafeteam .teams > div .thumb.hiring {
   width: 176px;
@@ -557,7 +562,7 @@ section .page-next:hover {
 }
 
 #security {
-  background: #F7A64A;
+  background: #EA8C55;
 }
 #security ul {
   margin: 0 auto;
@@ -804,6 +809,25 @@ footer .copyright a {
 }
 
 @media (max-width: 1280px) {
+      .world {
+        overflow: hidden; }
+      .world .top-fixed .sns-list {
+        display: block !important;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+        width: 50%;
+        text-align: right; }
+      .world .top-fixed .sns-list li {
+        display: inline-block;
+        width: 10%;
+        text-align: center;
+        vertical-align: middle;
+        margin-right: 0; }
+      .world .top-fixed .sns-list li:first-child {
+        margin-right: -5px; }
+      .world .icon-scroll {
+          left: 50%; }
   #hero .headline {
     padding: 10px 25px;
   }
