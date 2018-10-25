@@ -672,10 +672,11 @@ section .page-next:hover {
   background: #F7A64A;
 }
 #partners h2 {
-  color: #111f49;
+  color: #fff;
 }
 #partners h2 strong {
   border-bottom-color: rgba(17, 31, 73, 0.4);
+  text-align: center;
 }
 #partners .partners {
   margin: 50px auto;
