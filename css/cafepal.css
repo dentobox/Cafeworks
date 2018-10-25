@@ -385,29 +385,8 @@ section .page-next:hover {
   box-shadow: 0 1px 48px rgba(255, 255, 255, 0.5);
 }
 #hero:after {
-  background-image: url(../assets/img/main.png);
+  background-image: url(../../imgs/bg_1.png);
 }
-
-.asseen {
-  margin-bottom:160px;margin-top:-120px;
-  position:relative;z-index:10}
-.asseen img {
-  display:inline-block;
-  text-align:center;
-  max-height:30px;
-  margin:15px 20px;
-  opacity:0.6}
-.asseen {
-  margin-top:-80px}
-.asseen img {
-  max-height:24px;margin:15px 20px}
-.asseen {
-  margin-top:-20px}
-.asseen img {
-  max-height:24px;margin:15px 20px}
-.asseen {
-  margin-top:-210px}
-.asseen{margin-top:40px}
 
 #cafeview {
   background: #F7A64A;
@@ -562,7 +541,7 @@ section .page-next:hover {
 }
 
 #security {
-  background: #EA8C55;
+  background: #F7A64A;
 }
 #security ul {
   margin: 0 auto;
@@ -683,11 +662,17 @@ section .page-next:hover {
   border-color: transparent #F9D3A7 #F9D3A7 transparent;
 }
 
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;
+        background-color: grey;
+      }
+
 #partners {
   background: #F7A64A;
 }
 #partners h2 {
-  color: #111F49;
+  color: #EA8C55;
 }
 #partners h2 strong {
   border-bottom-color: rgba(17, 31, 73, 0.4);
@@ -702,8 +687,8 @@ section .page-next:hover {
   opacity: 0.8;
 }
 #partners .partners li img {
-  max-width: 180px;
-  max-height: 80px;
+  max-width: 140px;
+  max-height: 40px;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -807,8 +792,6 @@ footer .copyright span {
 footer .copyright a {
   margin: 0 12px;
 }
-
-
 
 @media (max-width: 1280px) {
       .world {
