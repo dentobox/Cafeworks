@@ -687,7 +687,7 @@ section .page-next:hover {
   background: #F7A64A;
 }
 #partners h2 {
-  color: #EA8C55;
+  color: #111F49;
 }
 #partners h2 strong {
   border-bottom-color: rgba(17, 31, 73, 0.4);
@@ -702,8 +702,8 @@ section .page-next:hover {
   opacity: 0.8;
 }
 #partners .partners li img {
-  max-width: 140px;
-  max-height: 40px;
+  max-width: 180px;
+  max-height: 80px;
   vertical-align: middle;
   cursor: pointer;
 }
