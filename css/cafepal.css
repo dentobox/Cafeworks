@@ -767,6 +767,10 @@ section .page-next:hover {
   color: #ACB1C0;
 }
 
+#map { 
+  position:absolute; top:0; bottom:0; width:100%;
+}
+
 footer {
   position: relative;
   padding: 48px 0;
@@ -807,6 +811,8 @@ footer .copyright span {
 footer .copyright a {
   margin: 0 12px;
 }
+
+
 
 @media (max-width: 1280px) {
       .world {
@@ -956,6 +962,3 @@ footer .copyright a {
   }
 }
 
-#map { 
-  position:absolute; top:0; bottom:0; width:100%;
-}
