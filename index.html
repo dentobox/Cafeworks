@@ -209,6 +209,7 @@ container: 'map',
 style: 'mapbox://styles/dentobox/cjnnvznls0puc2sq94ubywke7',
 center: [127.041724, 37.517642],
 zoom: 12.9
+scrollWheelZoom: false
 });
 var geojson = {
     "type": "FeatureCollection",
@@ -273,13 +274,7 @@ var geojson = {
     }
   ]
 }
-var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/light-v9',
-  center: [-96, 37.8],
-  zoom: 3
-  scrollWheelZoom: false
-});
+
 
 // add markers to map
 geojson.features.forEach(function(marker) {
