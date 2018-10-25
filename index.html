@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
     <meta name="description" content="CafePal - 카페팔은 카페 창업자들 에게 도움을 주고 소비자들에게 맛있는 커피를 소개주는 앱 입니다.">
     <meta name="author" content="dentobox">
     <meta name="keyword" content="커피, 카페, 음식점, 배달, 주문, 카페지역, 카페 추천, 카페 검색, 추천 카페, 카페픽업, 검색카페, 다방, 빵, 베이커리추천, 빵추천, 커피빵메뉴, 카페사이트, 맛있는카페, 지금 연 카페, 내 주변 카페, 동네카페, 동네베이커 , 카페 배달, 우리동네카페, 맛있는 커피 추천, pick up, Korea cafe, recommended cafe in Korea, coffee, coffee in korea, americano, latte, expresso, 전국카페, 부산카페, 해운대카페, 강남카페, 내 주변 베이커리, 할인커피, 인터넷커피, 온라인주문, 인터넷주문,  핸드폰결제커피, 휴대폰결제빵, 소액결제, 핸드폰주문, 휴대폰주문, 24시간 주문,  24시커피, 24시빵, 새벽커피, 카페메뉴, 카드주문, 포인트적립, 픽업, 커피 픽업, 지금 연 베이커리, 야식과 커피, 아메리카노, 라떼 추천, 아메리카노 추천, 모카 빵, 꽈배기 빵 추천, 동네 빵가게, 커피랑 빵, 동네카페 추천, 휴대폰 주문, 치킨배달, 분식배달, 보쌈배달">
@@ -29,10 +29,6 @@
     <!-- Maps -->
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
-<style>
-body { margin:0; padding:0; }
-#map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
     <!-- Snippet Analytics -->
     <script>
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
@@ -133,6 +129,10 @@ body { margin:0; padding:0; }
         </div>
     </section>
 <div id='map'></div>
+    <style>
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGVudG9ib3giLCJhIjoiY2puNGcwdjQyNWgxeDNrcWNkdDl1bjFqbSJ9.wheKiSk-Sg_2E2OU0cG9mQ';
 const map = new mapboxgl.Map({
@@ -142,6 +142,7 @@ center: [127.041724, 37.517642],
 zoom: 12.9
 });
 </script>
+
 <section id="partners">
   <div class="container">
     <h2 class="wow animated fadeIn" data-wow-delay="0.3s">친근하게 다가가는 주문앱, <strong>카페팔</strong></h2>
