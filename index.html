@@ -211,7 +211,6 @@ center: [127.041724, 37.517642],
 zoom: 12.9
 scrollWheelZoom: false
 });
-  </script>
 var geojson = {
     "type": "FeatureCollection",
     "features": [
@@ -293,6 +292,7 @@ geojson.features.forEach(function(marker) {
   .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
   .addTo(map);
 });
+</script>
 </section>
     <footer id="footer">
         <div class="container">
