@@ -329,6 +329,18 @@ geojson.features.forEach(function(marker) {
             </div>
         </div>
     </footer>
+      
+<!-- mapbox -->
+  <script>function MapTouch() {
+            return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+        }
+        if (MapTouch() === true) {
+            navigator = navigator || {};
+            navigator.msMaxTouchPoints = navigator.msMaxTouchPoints || 2;
+        }</script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+        <link href=https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css rel=stylesheet>
+
     <!-- Google Tag Manager -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6VF6T"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
