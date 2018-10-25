@@ -250,7 +250,7 @@ section h2 strong {
   border-radius: 2px;
 }
 section .container {
-  position: relative;
+  position: center;
   display: table-cell;
   margin: 0 auto;
   padding: 50px 5% 120px;
@@ -477,6 +477,7 @@ section .page-next:hover {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
+  height: 176px; 
   width: 176px;
   background: #FFF;
   color: #EA8C55;
