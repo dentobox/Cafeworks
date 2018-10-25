@@ -783,7 +783,7 @@ section .page-next:hover {
         cursor: pointer;
       }
 
-footer {
+#footer {
   position: relative;
   padding: 48px 0;
   width: 100vw;
