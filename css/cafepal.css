@@ -478,6 +478,7 @@ section .page-next:hover {
   flex-direction: column;
   padding-bottom: 10px;
   width: 176px;
+  height: 300px;
   background: #FFF;
   color: #EA8C55;
   cursor: help;
@@ -497,7 +498,7 @@ section .page-next:hover {
 }
 #cafeteam .teams > div .thumb.hiring {
   width: 176px;
-  height: 176px;
+  height: 300px;
   background: #F7A64A;
   color: #FFF;
   font-size: 48px;
