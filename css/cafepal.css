@@ -672,7 +672,7 @@ section .page-next:hover {
   background: #F7A64A;
 }
 #partners h2 {
-  color: #EA8C55;
+  color: #111f49;
 }
 #partners h2 strong {
   border-bottom-color: rgba(17, 31, 73, 0.4);
@@ -687,8 +687,8 @@ section .page-next:hover {
   opacity: 0.8;
 }
 #partners .partners li img {
-  max-width: 140px;
-  max-height: 40px;
+  max-width: 180px;
+  max-height: 90px;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -698,52 +698,7 @@ section .page-next:hover {
 #partners .partners:hover li:hover {
   opacity: 1;
 }
-#partners .news {
-  margin: 0 auto;
-  max-width: 720px;
-  width: 60%;
-  padding: 40px;
-  background: #FFF;
-  text-align: left;
-  box-shadow: 0 4px 150px rgba(17, 31, 73, 0.6);
-  box-sizing: border-box;
-}
-#partners .news h3 {
-  margin: 0 12px 12px;
-  color: #EA8C55;
-  font-weight: 700;
-  font-size: 22px;
-}
-#partners .news li {
-  margin: 0;
-}
-#partners .news li a {
-  display: block;
-  padding: 12px;
-  border-top: 1px solid #F4F5F7;
-  color: #EA8C55;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  box-sizing: border-box;
-}
-#partners .news li a span {
-  display: inline-block;
-  margin-right: 6px;
-  padding: 3px 8px;
-  width: 80px;
-  background: #F4F5F7;
-  font-size: 12px;
-  text-align: center;
-  border-radius: 3px;
-}
-#partners .news li a:hover {
-  background: #F4F5F7;
-}
-#partners .news li a:hover span {
-  background: #F7A64A;
-  color: #FFF;
-}
+
 #partners:after {
   border-color: transparent #F4F5F7 #F4F5F7 transparent;
 }
