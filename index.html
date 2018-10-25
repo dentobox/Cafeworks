@@ -127,15 +127,16 @@
             </div>
         </div>
     </section>
-    <div id="map"></div>
-        <script>
-          function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 8,
-              center: {lat: 37.51991, lng: 126.90587}
-            });
-          }
-     </script>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGVudG9ib3giLCJhIjoiY2puNGcwdjQyNWgxeDNrcWNkdDl1bjFqbSJ9.wheKiSk-Sg_2E2OU0cG9mQ';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/dentobox/cjnnvznls0puc2sq94ubywke7',
+center: [127.041724, 37.517642],
+zoom: 12.9
+});
+</script>
 <section id="partners">
   <div class="container">
     <h2 class="wow animated fadeIn" data-wow-delay="0.3s">친근하게 다가가는 주문앱, <strong>카페팔</strong></h2>
@@ -198,19 +199,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5D6VF6T');</script>
 <!-- End Google Tag Manager -->
 
-    <a href="https://t.me/cafepal" target="_blank" class="btn-float" title="텔레그램으로 문의하기"><i class="fab fa-telegram-plane"></i></a>
 
-<!-- naver analytics -->
-  <script>
-    var map = new naver.maps.Map('map', {
-   center: new naver.maps.LatLng(37.3595704, 127.105399),
-   zoom: 10
-});
-var marker = new naver.maps.Marker({
-   position: new naver.maps.LatLng(37.3595704, 127.105399),
-   map: map
-});
-     </script>
+
+<!-- maps -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+<style>
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126812295-2"></script>
   <script>
