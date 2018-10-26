@@ -22,6 +22,7 @@
     <link href="/css/milligram.min.css" rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <!-- Different styles -->
     <link href="/css/cafepal.css" rel="stylesheet">
     <link href="/css/animate.css" rel="stylesheet">
@@ -73,7 +74,6 @@
 <!-- End Facebook Pixel Code -->
 </head>
 <body class="cafe-body">
-
     <header>
         <div class="logo">
             <h1 class="wow animated fadeIn">
@@ -90,11 +90,30 @@
             </ul>
         </nav>
     </header>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script> 
+        document.getElementById('updatedetails');
+        .addEventListener('click',function(){
+            toastr["info"]("Currently working on mobile platforms ", "iOS and Android Apps")
+        })
+    </script>
+  toastr.options = {
+  "closeButton": true,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-bottom-left",
+  "preventDuplicates": false,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "10000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
     <section id="hero">
-        <!--video id="video" autoplay muted loop style="display:none;">
-            <source src="imgs/lights.mp4" type="video/mp4">
-        </video-->
         <canvas id="world"></canvas>
         <div class="container">
             <div class="headline wow animated fadeIn">
