@@ -74,6 +74,13 @@
 <!-- End Facebook Pixel Code -->
 </head>
 <body class="cafe-body">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script> 
+        document.getElementById('updatedetails');
+        .addEventListener('click',function(){
+            toastr.info("Currently working on mobile platforms ", "iOS and Android Apps");
+        })
+    </script>
     <header>
         <div class="logo">
             <h1 class="wow animated fadeIn">
@@ -90,13 +97,6 @@
             </ul>
         </nav>
     </header>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script> 
-        document.getElementById('updatedetails');
-        .addEventListener('click',function(){
-            toastr["info"]("Currently working on mobile platforms ", "iOS and Android Apps")
-        })
-    </script>
     <section id="hero">
         <canvas id="world"></canvas>
         <div class="container">
