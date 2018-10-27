@@ -114,6 +114,25 @@ body .btn-float:hover .fab {
   text-align: center;
 }
 
+.cafe-body .btn-ceo {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 125px;
+    height: 156px;
+    background: url("/assets/img/btn_rider.png") no-repeat 0 0;
+    background-size: contain; }
+  .cafe-body .btn-ceo span {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px 1px 1px 1px);
+      /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px); }
+
+
 header {
   z-index: 999;
   position: absolute;
