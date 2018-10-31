@@ -360,7 +360,7 @@ section .page-next:hover {
   width: 180px;
   background: #FFF;
   color: #EA8C55;
-  font-family: "ubuntu";
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 54px;
@@ -446,7 +446,7 @@ section .page-next:hover {
 #cafeview ul li h4 {
   font-size: 32px;
   font-weight: 700;
-  font-family: "ubuntu";
+  font-family: 'Noto Sans KR', sans-serif;
   opacity: 0.4;
 }
 #cafeview ul li p {
@@ -525,7 +525,7 @@ section .page-next:hover {
 }
 #cafeteam .teams > div strong {
   font-size: 15px;
-  font-family: "ubuntu";
+  font-family: 'Noto Sans KR', sans-serif;
 }
 #cafeteam .teams > div em {
   font-style: normal;
@@ -615,7 +615,7 @@ section .page-next:hover {
   margin-top: 12px;
   font-weight: 700;
   font-size: 2.8rem;
-  font-family: "ubuntu";
+  font-family: 'Noto Sans KR', sans-serif;
 }
 #security ul li p {
   margin: 0;
@@ -680,6 +680,13 @@ section .page-next:hover {
 }
 #security:after {
   border-color: transparent #F9D3A7 #F9D3A7 transparent;
+}
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%; 
 }
 
 #partners {
@@ -754,7 +761,7 @@ footer .copyright {
 }
 footer .copyright h6 {
   font-weight: 700;
-  font-family: "ubuntu";
+  font-family: 'Noto Sans KR', sans-serif;
 }
 footer .copyright span {
   text-align: right;
