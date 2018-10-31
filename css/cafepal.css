@@ -683,10 +683,11 @@ section .page-next:hover {
 }
 
 #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;
-        background-color: grey;
-      }
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%; 
+}
 
 #partners {
   background: #eea478;
