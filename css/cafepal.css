@@ -682,7 +682,7 @@ section .page-next:hover {
   border-color: transparent #F9D3A7 #F9D3A7 transparent;
 }
 
-map {
+#map {
   position:absolute;
   top:0;
   bottom:0;
