@@ -8,7 +8,6 @@
     <meta name="description" content="CafePal - 카페팔은 카페 창업자들 에게 도움을 주고 소비자들에게 맛있는 커피를 소개주는 앱 입니다.">
     <meta name="author" content="dentobox">
     <meta name="keyword" content="커피, 카페, 음식점, 배달, 주문, 카페지역, 카페 추천, 카페 검색, 추천 카페, 카페픽업, 검색카페, 다방, 빵, 베이커리추천, 빵추천, 커피빵메뉴, 카페사이트, 맛있는카페, 지금 연 카페, 내 주변 카페, 동네카페, 동네베이커 , 카페 배달, 우리동네카페, 맛있는 커피 추천, pick up, Korea cafe, recommended cafe in Korea, coffee, coffee in korea, americano, latte, expresso, 전국카페, 부산카페, 해운대카페, 강남카페, 내 주변 베이커리, 할인커피, 인터넷커피, 온라인주문, 인터넷주문,  핸드폰결제커피, 휴대폰결제빵, 소액결제, 핸드폰주문, 휴대폰주문, 24시간 주문,  24시커피, 24시빵, 새벽커피, 카페메뉴, 카드주문, 포인트적립, 픽업, 커피 픽업, 지금 연 베이커리, 야식과 커피, 아메리카노, 라떼 추천, 아메리카노 추천, 모카 빵, 꽈배기 빵 추천, 동네 빵가게, 커피랑 빵, 동네카페 추천, 휴대폰 주문, 치킨배달, 분식배달, 보쌈배달">
-    <meta name="google-site-verification" content="dx4WNmjVzpoFENPMqqaS_RPyjdMvIigunUZHz3CK8U0" />
     <meta property="og:title" content="당신을 위한 카페앱 | CafePal">
     <meta property="og:description" content="CafePal - 카페팔은 카페 창업자들 에게 도움을 주고 소비자들에게 맛있는 커피를 소개주는 앱 입니다.">
     <meta property="og:image" content="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/44028246_309835189832062_5762775431719682048_o.png?_nc_cat=101&oh=2eb1fd88012ed44982c3e3264d657191&oe=5C470BD7">
@@ -16,6 +15,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:site_name" content="CafePal | Made it easy to help cafes reach their fullest business potential and customers to discover new cafes.">
     <meta name="twitter:image:alt" content="카페팔은 카페 창업자들 에게 도움을 주고 소비자들에게 맛있는 커피를 소개주는 앱 입니다.">
+    <meta name="google-site-verification" content="String_we_ask_for">
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
     <title>Cafepal | 내가 제일 좋아하는 커피 주문앱</title>
     <!-- CSS Frameworks -->
@@ -49,17 +49,7 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-        <script>
-          var img = new Image();
-          img.onload = function() {
-            setTimeout(function() {
-              if (!$('.app-header-img').hasClass('zoom-in')) {
-                $('.app-header-img').css({ 'background-image': 'url(assets/img/main_01.jpg)' }).addClass('zoom-in');
-              }
-            }, 100);
-          };
-          img.src = '/assets/img/main.jpg';
-        </script>
+
 <!-- Facebook Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
@@ -76,7 +66,7 @@
 </head>
 <body class="cafe-body">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script> 
+    <script>
         document.getElementById('updatedetails');
         .addEventListener('click',function(){
             toastr.info("Currently working on mobile platforms ", "iOS and Android Apps");
@@ -85,7 +75,7 @@
     <header>
         <div class="logo">
             <h1 class="wow animated fadeIn">
-                <img src="/assets/img/iconsvg.svg" alt="CafePal">  
+                <img src="/index"><strong>CAFEPAL</strong></a>
             </h1>
             <a href="/index" class="wow animated fadeIn"><strong>KR</strong></a>
         </div>
@@ -94,9 +84,9 @@
                 <li class="is-current"><a href="#hero" class="scroll">카페팔이 왔습니다!</a></li>
                 <li><a href="#cafeview" class="scroll">왜 카페팔인가?</a></li>
                 <li><a href="#cafeteam" class="scroll">만드는 사람들</a></li>
-                <li><a href="#footer" class="scroll"><i class="fa fa-question-circle"></i></a></li>
+                <li><a href="http://www.cafepal.net" target="_blank"> 카페 사장님이세요? </a>
+                <li><a href="#footer" class="scroll"><i class="fas fa-info-circle"></i></a></li>
             </ul>
-             <a href="http://www.cafepal.net/" class="btn-ceo" target="_blank"><span>사장님 페이지 바로가기</span></a>
         </nav>
     </header>
     <section id="hero">
@@ -111,7 +101,7 @@
                         Play</a>
                     <a href="https://itunes.apple.com/kr/app/카페팔-커피-주문앱" target="_blank"><i class="fab fa-apple"></i>App
                         Store</a>
-                </div>      
+                </div>
             </div>
         </div>
     </section>
@@ -155,11 +145,15 @@
                     <a href="https://www.linkedin.com/in/danielhan-0102/" title="링크드인 프로필 바로가기" target="_blank"><i
                             class="fab fa-linkedin-in"><span>linkedin</span></i></a>
                 </div>
-                  <div class="wow animated fadeIn" data-wow-delay="1.8s">
+                <div class="wow animated fadeIn" data-wow-delay="1.5s">
+                    <span class="thumb"><img src="assets/img/lucky.jpg"></span>
+                    <strong>Animal Members</strong>
+                    <em>more people here</em>
+                </div>
+                <div class="wow animated fadeIn" data-wow-delay="1.8s">
                     <span class="thumb hiring"><i class="fas fa-bullhorn"></i></span>
                     <strong>Currently hiring</strong>
                     <em>상시채용중</em>
-                    <a href="https://www.angel.co/" title="채용정보" target="_blank"><i class="far fa-smile"><span>Angel List</span></i></a>
                 </div>
             </div>
         </div>
@@ -174,7 +168,6 @@ center: [127.041724, 37.517642],
 zoom: 12.9
 });
 </script>
-    </section> 
 
 <section id="partners">
   <div class="container">
@@ -190,7 +183,7 @@ zoom: 12.9
          </ul>
   </div>
   </section>
-    
+
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -199,6 +192,7 @@ zoom: 12.9
                         <h5>카페팔 컴퍼니</h5>
                     </li>
                     <li>주소 : 서울시 강남구 삼성동 157길 11 </li>
+                    <li><a href="https://www.cafepal.net" target="_blank"><i class="fas fa-building"></i></i>  사장님페이지</a></li>
                 </ul>
                 <ul class="column column-25">
                     <li>
@@ -217,7 +211,6 @@ zoom: 12.9
                     </li>
                     <li><a href="mailto:cafepalkorea@gmail.com" target="_blank"><i class="fas fa-envelope"></i> hello@cafepal.co.kr</a></li>
                     <li><a href="https://t.me/cafepal" target="_blank"><i class="fab fa-telegram-plane"></i> 메세지 보내기</a></li>
-                    <li><a href="https://www.cafepal.net" target="_blank"><i class="fas fa-building"></i></i>  카페 사장님이세요?</a></li>
                 </ul>
             </div>
             <div class="copyright row">
@@ -228,21 +221,21 @@ zoom: 12.9
             </div>
         </div>
   </footer>
-                        
-    <!-- firebase --> 
-<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
-<script>
-  var config = {
-    apiKey: "AIzaSyDUmoAEqAhNkNx3uGNwh-xd50B3v79kb6w",
-    authDomain: "cafeworks-1539254532108.firebaseapp.com",
-    databaseURL: "https://cafeworks-1539254532108.firebaseio.com",
-    projectId: "cafeworks-1539254532108",
-    storageBucket: "",
-    messagingSenderId: "447093289326"
-  };
-  firebase.initializeApp(config);
-</script>
-                        
+
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyDUmoAEqAhNkNx3uGNwh-xd50B3v79kb6w",
+      authDomain: "cafeworks-1539254532108.firebaseapp.com",
+      databaseURL: "https://cafeworks-1539254532108.firebaseio.com",
+      projectId: "cafeworks-1539254532108",
+      storageBucket: "",
+      messagingSenderId: "447093289326"
+    };
+    firebase.initializeApp(config);
+  </script>
+
     <!-- Google Tag Manager -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6VF6T"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -253,28 +246,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5D6VF6T');</script>
 <!-- End Google Tag Manager -->
 
-
-
-<!-- maps -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126812295-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-126812295-2');
-</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126812295-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-126812295-2');
+  </script>
 
     <!-- jquery and necessary plugins -->
   <script src="/js/jquery.js"></script>
   <script src="/js/wow.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 
     <!-- main scripts -->
   <script src="/js/space.js"></script>
   <script src="/js/cafepal.js"></script>
-  <script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="e40c2de4-5981-47b9-b938-8c6a5de46acf";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>                      
+  <script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="e40c2de4-5981-47b9-b938-8c6a5de46acf";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
 
 </body>
 </html>
