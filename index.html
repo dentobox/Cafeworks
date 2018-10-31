@@ -15,7 +15,6 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:site_name" content="CafePal | Made it easy to help cafes reach their fullest business potential and customers to discover new cafes.">
     <meta name="twitter:image:alt" content="카페팔은 카페 창업자들 에게 도움을 주고 소비자들에게 맛있는 커피를 소개주는 앱 입니다.">
-    <meta name="google-site-verification" content="String_we_ask_for">
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
     <title>Cafepal | 내가 제일 좋아하는 커피 주문앱</title>
     <!-- CSS Frameworks -->
@@ -28,9 +27,6 @@
     <link href="/css/cafepal.css" rel="stylesheet">
     <link href="/css/animate.css" rel="stylesheet">
     <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
-    <!-- Maps -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Snippet Analytics -->
     <script>
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
@@ -49,7 +45,17 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
+        <script>
+          var img = new Image();
+          img.onload = function() {
+            setTimeout(function() {
+              if (!$('.app-header-img').hasClass('zoom-in')) {
+                $('.app-header-img').css({ 'background-image': 'url(assets/img/main_01.jpg)' }).addClass('zoom-in');
+              }
+            }, 100);
+          };
+          img.src = '/assets/img/main_01.jpg';
+        </script>
 <!-- Facebook Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
@@ -65,17 +71,10 @@
 <!-- End Facebook Pixel Code -->
 </head>
 <body class="cafe-body">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script>
-        document.getElementById('updatedetails');
-        .addEventListener('click',function(){
-            toastr.info("Currently working on mobile platforms ", "iOS and Android Apps");
-        })
-    </script>
     <header>
         <div class="logo">
             <h1 class="wow animated fadeIn">
-                <img src="/index"><strong>CAFEPAL</strong></a>
+                <img src="/assets/img/iconsvg.svg" alt="CafePal">
             </h1>
             <a href="/index" class="wow animated fadeIn"><strong>KR</strong></a>
         </div>
@@ -84,12 +83,14 @@
                 <li class="is-current"><a href="#hero" class="scroll">카페팔이 왔습니다!</a></li>
                 <li><a href="#cafeview" class="scroll">왜 카페팔인가?</a></li>
                 <li><a href="#cafeteam" class="scroll">만드는 사람들</a></li>
-                <li><a href="http://www.cafepal.net" target="_blank"> 카페 사장님이세요? </a>
+                <li><a href="http://www.cafepal.net" target="_blank">카페 사장님이세요?</a></li>
                 <li><a href="#footer" class="scroll"><i class="fas fa-info-circle"></i></a></li>
             </ul>
         </nav>
     </header>
     <section id="hero">
+        <video id="video" autoplay muted loop style="display:none;">
+            <source src="/assets/ims/appDemo.mp4" type="video/mp4"></video>
         <canvas id="world"></canvas>
         <div class="container">
             <div class="headline wow animated fadeIn">
@@ -109,7 +110,7 @@
     <section id="cafeview">
         <div class="container">
             <h2 class="wow animated fadeIn" data-wow-delay="0.3s">내 주변에 취향저격하는 카페를 찾아보자 <strong>편리한 카페팔</strong></h2>
-            <ul class="wow animated fadeIn" data-wow-delay="0.6s">
+            <ul class="wow animated fadeIn" data-wow-delay="0.5s">
                 <li data-cafeview-label="cafepal" class="current">
                     <h4>CafePal</h4>
                     <p>모든 카페를 앱 하나로!<br /><strong>주문 커피앱, 카페팔. 반갑습니다!</strong></p>
@@ -145,33 +146,33 @@
                     <a href="https://www.linkedin.com/in/danielhan-0102/" title="링크드인 프로필 바로가기" target="_blank"><i
                             class="fab fa-linkedin-in"><span>linkedin</span></i></a>
                 </div>
-                <div class="wow animated fadeIn" data-wow-delay="1.5s">
-                    <span class="thumb"><img src="assets/img/lucky.jpg"></span>
-                    <strong>Animal Members</strong>
-                    <em>more people here</em>
-                </div>
-                <div class="wow animated fadeIn" data-wow-delay="1.8s">
+                <div class="wow animated fadeIn" data-wow-delay="1.1s">
                     <span class="thumb hiring"><i class="fas fa-bullhorn"></i></span>
                     <strong>Currently hiring</strong>
                     <em>상시채용중</em>
+                    <a href="https://www.angel.co/" title="채용 정보 바로가기" target="_blank"><i class="far fa-smile"><span>Angel List</span>                     </i></a>
                 </div>
             </div>
         </div>
     </section>
-<secion id='map'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiZGVudG9ib3giLCJhIjoiY2puNGcwdjQyNWgxeDNrcWNkdDl1bjFqbSJ9.wheKiSk-Sg_2E2OU0cG9mQ';
-const map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/dentobox/cjnnvznls0puc2sq94ubywke7',
-center: [127.041724, 37.517642],
-zoom: 12.9
-});
-</script>
+<section id='map'>
+    <div class="container">
+        <h2 class="wow aniamted fadeIn" data-wow-delay="0.2s">카페팔 <strong>지점들</strong></h2>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZGVudG9ib3giLCJhIjoiY2puNGcwdjQyNWgxeDNrcWNkdDl1bjFqbSJ9.wheKiSk-Sg_2E2OU0cG9mQ';
+        const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/dentobox/cjnnvznls0puc2sq94ubywke7',
+        center: [127.041724, 37.517642],
+        zoom: 12.9
+        });
+    </script>
+  </div>
+</section>
 
 <section id="partners">
   <div class="container">
-    <h2 class="wow animated fadeIn" data-wow-delay="0.3s">친근하게 다가가는 주문앱, <strong>카페팔</strong></h2>
+    <h2 class="wow animated fadeIn" data-wow-delay="0.4s">친근하게 다가가는 주문앱, <strong>카페팔</strong></h2>
          <ul class="partners">
              <li><a href="http://www.facebook.com/cafepalkorea" class="wow animated flipInX"><img src="/assets/img/iconFacebook.png" alt="Facebook"></a></li>
              <li><a href="http://www.instagram.com/cafepalkorea" class="wow animated flipInX"><img src="/assets/img/iconInstagram.png" alt="instagram"></a></li>
@@ -182,17 +183,17 @@ zoom: 12.9
              <li><a href="http://t.me/cafepal" class="wow animated flipInX"><img src="/assets/img/iconTelegram.png" alt="telegram chat"></a></li>
          </ul>
   </div>
-  </section>
+</section>
 
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <ul class="column column-50">
                     <li>
-                        <h5>카페팔 컴퍼니</h5>
+                        <h5>2018 카페팔 컴퍼니</h5>
                     </li>
                     <li>주소 : 서울시 강남구 삼성동 157길 11 </li>
-                    <li><a href="https://www.cafepal.net" target="_blank"><i class="fas fa-building"></i></i>  사장님페이지</a></li>
+                    <li><a href="https://www.cafepal.net" target="_blank"><i class="fas fa-building"></i> 사장님페이지</a></li>
                 </ul>
                 <ul class="column column-25">
                     <li>
